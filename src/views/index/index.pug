@@ -4,6 +4,10 @@ block head
     include Components/head/head.pug
     +head("VXID")
 block main 
-    // include ../../components/hero/hero.pug
+    include Components/hero/hero.pug
+    include Components/works/works.pug
+    include Components/work-step/work-step.pug
+    include Components/faq/faq.pug
+    include Components/contact/contact.pug
 block scripts
     script(src=require("./main.js"))
