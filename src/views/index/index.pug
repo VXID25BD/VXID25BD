@@ -4,6 +4,11 @@ block head
     include Components/head/head.pug
     +head("VXID")
 block main 
+    // UI
+    include Components/UI/button/_fill/button_fill.pug
+    include Components/UI/button/_border/button_border.pug
+
+    // SECTIONS
     include Components/hero/hero.pug
     include Components/works/works.pug
     include Components/work-step/work-step.pug

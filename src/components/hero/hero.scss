@@ -36,32 +36,3 @@
         }
     }
 }
-
-.button{
-    font-size: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-    transition: $transition;
-}
-
-.button_fill{
-    background-color: $color-black;
-    color: $color-white;
-    border: 1px solid $color-black;
-
-    &:hover{
-        background-color: transparent;
-        color: $color-black;
-    }
-}
-.button_border{
-    border: 1px solid $color-black;
-    color: $color-black;
-
-    &:hover{
-        background-color: $color-black;
-        color: $color-white;
-    }
-}

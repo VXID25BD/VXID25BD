@@ -1,0 +1,10 @@
+.button_fill{
+    background-color: $color-black;
+    color: $color-white;
+    border: 1px solid $color-black;
+
+    &:hover{
+        background-color: transparent;
+        color: $color-black;
+    }
+}

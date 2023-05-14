@@ -37,10 +37,13 @@ p{
 }
 section+section{margin-top: $section-margin;}
 /* COMPONENTS */
-@import "../../components/header/header.scss";
-@import "../../components/hero/hero.scss";
-@import "../../components/navigation/navigation.scss";
-@import "../../components/social/social.scss";
-@import "../../components/footer/footer.scss";
+@import "Components/header/header.scss";
+@import "Components/hero/hero.scss";
+@import "Components/navigation/navigation.scss";
+@import "Components/social/social.scss";
+@import "Components/footer/footer.scss";
 
 /* UI */
+@import "Components/UI/button/button.scss";
+@import "Components/UI/button/_fill/button_fill.scss";
+@import "Components/UI/button/_border/button_border.scss";
