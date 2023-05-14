@@ -1,10 +1,11 @@
-mixin item-works(title, desciprion, imgSrc, alt, href, tags)
-            .item-works__preview 
-                img(src=require(`Assets/images/works/${imgSrc}`), alt=alt)
-            .item-works__body 
-                p.item-works__title= title
-                ul.item-works__tags.tags
-                    each tag in tags
-                        li= tag 
-                p.item-works__description= desciprion
-                +button_border("View", href)
+mixin item-works(className, title, desciprion, imgSrc, alt, href, tags)
+    div(class=`item-works ${className}__item`)
+        a(href=href, class="item-works__preview ")
+            img(src=require(`Assets/images/works/${imgSrc}`), alt=alt)
+        .item-works__body 
+            p.item-works__title= title
+            ul.item-works__tags.tags
+                each tag in tags
+                    li.tags__item= tag 
+            p.item-works__description= desciprion
+            +button_border("View", href)
