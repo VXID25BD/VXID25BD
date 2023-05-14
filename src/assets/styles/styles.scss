@@ -7,7 +7,24 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 240px;
 }
 
-h2{font-size: 82px;}
+h2{
+    font-size: 82px;
+    padding-bottom: $element-between;
+    margin-bottom: $element-between;
+    text-transform: uppercase;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 925px;
+        height: 1px;
+        background-color: $color-black;
+    }
+}
 h3{font-size: 72px;}
 
 p{
