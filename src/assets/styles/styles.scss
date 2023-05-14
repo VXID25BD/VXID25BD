@@ -4,7 +4,7 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: $fw-regular;
-    font-size: 240px;
+    font-size: 12vw;
 }
 
 h2{
@@ -35,7 +35,7 @@ p{
     padding-right: 15px;
     padding-left: 15px;
 }
-
+section+section{margin-top: $section-margin;}
 /* COMPONENTS */
 @import "../../components/header/header.scss";
 @import "../../components/hero/hero.scss";

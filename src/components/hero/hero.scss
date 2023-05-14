@@ -1,0 +1,67 @@
+.hero{
+    padding-top: 105px;
+
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .offer{
+        flex: 0 1 700px;
+    }
+    .code{
+        flex: 0 1 800px;
+    }
+}
+
+.code{
+    padding: 15px;
+    border: 1px solid $color-black;
+    font-size: 48px;
+    font-weight: $fw-light;
+}
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    
+    &__actions{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+
+        .button{
+            flex: 0 1 100%;
+        }
+    }
+}
+
+.button{
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    transition: $transition;
+}
+
+.button_fill{
+    background-color: $color-black;
+    color: $color-white;
+    border: 1px solid $color-black;
+
+    &:hover{
+        background-color: transparent;
+        color: $color-black;
+    }
+}
+.button_border{
+    border: 1px solid $color-black;
+    color: $color-black;
+
+    &:hover{
+        background-color: $color-black;
+        color: $color-white;
+    }
+}
