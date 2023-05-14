@@ -1,0 +1,17 @@
+.social{
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    &__link{
+        svg{
+            fill: rgba($color-black, .7);
+            transition: $transition;
+            width: 32px;
+            height: 32px;
+
+            &:hover{fill: $color-black;}
+        }
+    }
+}
