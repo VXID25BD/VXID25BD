@@ -8,6 +8,6 @@ section.contact.outer
                     input(class="form-contact__input", type="text", tabindex=1, placeholder="Name", name="name", required)
                 label
                     input(class="form-contact__input", type="email", tabindex=2, placeholder="Email", name="email", required)
-            textarea(class="form-contact__textarea", tabindex=3, placeholder="Message", name="message", required) 
+            textarea(class="form-contact__textarea _scrollable", tabindex=3, placeholder="Message", name="message", required) 
             +button_border("Send", tag="button")(type="submit", name="submit", tabindex=4)
         include Components/social/social.pug
