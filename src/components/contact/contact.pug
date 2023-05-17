@@ -1,2 +1,13 @@
 section.contact.outer
     h2 HAVE ANY QUESTIONS?
+    .contact__wrapper
+        form(method="POST", action="/mock-address/change-me", class="contact__form form-contact")
+            h3.form-contact__title SEND ME A MESSAGE
+            .form-contact__inputs 
+                label
+                    input(class="form-contact__input", type="text", tabindex=1, placeholder="Name", name="name", required)
+                label
+                    input(class="form-contact__input", type="email", tabindex=2, placeholder="Email", name="email", required)
+            textarea(class="form-contact__textarea", cols="30", rows="10", tabindex=3, placeholder="Message", name="message", required) 
+            +button_border("Send", tag="button")(type="submit", name="submit", tabindex=4)
+        include Components/social/social.pug

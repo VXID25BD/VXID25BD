@@ -1,3 +1,4 @@
-mixin button_border(text, href)
-    a(href=href, class="button button_border")= text
-    
+include Components/UI/button/button.pug
+mixin button_border(text, tag="a")
+    -const mods = ["button_border"]
+    +button(text, tag, mods)

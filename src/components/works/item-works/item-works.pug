@@ -8,4 +8,4 @@ mixin item-works(className, title, desciprion, imgSrc, alt, href, tags)
                 each tag in tags
                     li.tags__item= tag 
             p.item-works__description= desciprion
-            +button_border("View", href)
+            +button_border("View")(href=href)

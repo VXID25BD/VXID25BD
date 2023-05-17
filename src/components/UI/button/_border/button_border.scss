@@ -1,7 +1,8 @@
 .button_border{
     border: 1px solid $color-black;
     color: $color-black;
-
+    background-color: transparent;
+    
     &:hover{
         background-color: $color-black;
         color: $color-white;
