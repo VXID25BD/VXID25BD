@@ -38,7 +38,7 @@
             }
         }
 
-        &._active &-body{display: block;}
-        &._active &-header svg{transform: rotate(180deg);}
+        &._open &-body{display: block;}
+        &._open &-header svg{transform: rotate(180deg);}
     }
 }
