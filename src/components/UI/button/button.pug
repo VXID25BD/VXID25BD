@@ -1,9 +1,0 @@
-mixin button(text, tag="a", mods=[])
-    -let className = "button"
-    each mod in mods
-        -className += " " + mod;
-    case tag 
-        when "a"
-            a(href=href, class=className)= text
-        when "button"
-            button(type=type, class=className)= text

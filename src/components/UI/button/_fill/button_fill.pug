@@ -1,5 +1,9 @@
 include Components/UI/button/button.pug
 mixin button_fill(text, tag="a")
-    -const mods = ["button_fill"]
-    +button(text, tag, mods)
+    -let className = "button button_fill"
+    case tag 
+        when "a"
+            a(class=className)&attributes(attributes)= text
+        when "button"
+            button(class=className)&attributes(attributes)= text
     
