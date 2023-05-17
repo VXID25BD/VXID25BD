@@ -1,0 +1,53 @@
+.contact{
+    margin-bottom: $section-margin;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .social{
+        &__wrapper{flex-direction: column;}
+
+        &__link svg{
+            width: 48px;
+            height: 48px;
+        }
+    }
+}
+
+.form-contact{
+    border: 1px solid $color-black;
+    padding: 30px;
+
+    h3{margin-bottom: 100px;}
+
+    &__inputs{
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        margin-bottom: 45px;
+    }
+    &__input,
+    &__textarea{
+        font-size: 32px;
+        font-weight: $fw-light;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $color-black;
+
+        &::placeholder{
+            opacity: 1;
+            font-size: 32px;
+            font-weight: $fw-light;
+        }
+    }
+    &__input{
+        height: 100%;
+        flex: 0 1 auto;
+    }
+    &__textarea{
+        resize: none;
+        width: 100%;
+        margin-bottom: 45px;
+    }
+}
