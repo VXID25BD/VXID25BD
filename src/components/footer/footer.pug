@@ -1,2 +1,11 @@
 footer.footer.outer 
-    .container
+    .footer__wrapper
+        .footer__col
+            include Components/logo/logo.pug
+            span.copyright designed && development by VXID
+        .footer__col 
+            span.footer__col-title Navigation
+            include Components/navigation/navigation.pug
+                .footer__col 
+            span.footer__col-title Social
+            include Components/social/social.pug    
