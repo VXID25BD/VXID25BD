@@ -1,0 +1,20 @@
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 32px;
+    color: $color-black;
+
+    svg{
+        fill: none;
+        width: 48px;
+        height: 39px;
+        transition: 3s;
+        transform-origin: center;
+
+    }
+    
+    &:hover svg{
+        transform: rotate(360deg);
+    }
+}

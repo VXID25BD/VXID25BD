@@ -47,6 +47,7 @@ p{
 
 section+section{margin-top: $section-margin;}
 /* COMPONENTS */
+@import "Components/logo/logo.scss";
 @import "Components/header/header.scss";
 @import "Components/hero/hero.scss";
 @import "Components/navigation/navigation.scss";
