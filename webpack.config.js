@@ -1,20 +1,23 @@
 const path = require("path");
 const PugPlugin = require("pug-plugin");
 const autoprefixer = require("autoprefixer");
+const mode = process.env.NODE_ENV;
+
+console.log(path.join(__dirname, "dist/"));
 
 module.exports = {
     entry: {
-        index: path.resolve(__dirname, "src", "views", "index", "index.pug"),
+        index: path.resolve("src", "views", "index", "index.pug"),
     },
     output: {
-        path: path.join(__dirname, 'dist/'),
-        publicPath: '/',
-        filename: 'assets/js/[name].[contenthash:8].js'
+        path: path.join(__dirname, "dist/"),
+        publicPath: "./",
+        filename: "assets/js/[name].[contenthash:8].js"
     },
     resolve: {
       alias: {
-        Components: "/src/components/",
-        Assets: "/src/assets/",
+        Components: path.join(__dirname, "/src", "components"),
+        Assets: path.join(__dirname, "/src", "assets"),
       }
     },
     plugins: [
