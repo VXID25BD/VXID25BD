@@ -8,4 +8,13 @@ section.hero.outer
                 .offer__actions
                         +button_fill("Contact me")(href="/mock-address/change-me")
                         +button_border("Works")(href="/mock-address/change-me")
-            pre.code= `<!DOCTYPE html>\n<html lang=”ru”>\n<head>\n\t<title>VXID</title>\n</head>`
+            .code
+                span= `<!DOCTYPE html>`
+                br
+                span= `<html lang=”ru”>`
+                br
+                span= `<head>`
+                br
+                span(class="code__tag-tab")= `<title>VXID</title>`
+                br
+                span= `</head>`

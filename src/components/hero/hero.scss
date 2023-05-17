@@ -19,6 +19,10 @@
     border: 1px solid $color-black;
     font-size: 48px;
     font-weight: $fw-light;
+
+    &__tag-tab{
+        padding-left: 127px;
+    }
 }
 
 .offer{
